@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #e5e7eb;
+}
+
+body {
+    height: 0vh;
+}
+.navbar {
+    transition: all 0.4s;
+}
+.navbar .nav-link {
+    color: rgb(0, 0, 0);
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: rgb(174, 0, 255);
+    text-decoration: none;
+}
+.navbar .navbar-brand {
+    color: rgb(0, 0, 0);
+}
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar.active .nav-link {
+    color: #555;
+}
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+.navbar.active .navbar-brand {
+    color: #555;
+}
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: #555;
+    }
+}
+.logo {
+    height: 90px;
+    width: 90px;
+}
+.nav-item {
+    font-size: 35px;
+    font-family: roboto;
+}
+.container1{
+    display: inline-flex;
+    padding: 2px;
+}
+.memory-game {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #9f5cf3 0%, #00f7ff 51%, #9f5cf3 100%)
+}
+
+.btn-grad {
+    margin: 0;
+    padding: 15px 45px;
+    width: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid black;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.container{
+    padding: 20px;
+    position: relative;
+}
+.vertical-center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

@@ -1,0 +1,270 @@
+.navbar {
+    transition: all 0.4s;
+}
+.navbar .nav-link {
+    color: rgb(0, 0, 0);
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: rgb(174, 0, 255);
+    text-decoration: none;
+}
+.navbar .navbar-brand {
+    color: rgb(0, 0, 0);
+}
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar.active .nav-link {
+    color: #555;
+}
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+.navbar.active .navbar-brand {
+    color: #555;
+}
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: #555;
+    }
+}
+.logo {
+    height: 90px;
+    width: 90px;
+}
+.nav-item {
+    font-size: 35px;
+    font-family: Roboto;
+}
+
+.bi {
+    width: 18px;
+    height: 18px;
+}
+
+.container1 {
+    display: inline-flex;
+    margin: 5px;
+    padding: 2px;
+}
+
+html {
+    background-color: #e5e7eb;
+    background-size: cover;
+}
+
+.content-box {
+    background-color: #e5e7eb;
+    height: 500px;
+    max-width: 600px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.the-quiz-header {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.next-question,
+.final-score,
+.play-again {
+    font-size: 20px;
+    padding: 5px;
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 5px 8px 0 #999999;
+    margin-bottom: 20px;
+}
+
+.question-box,
+.feedback,
+.end-screen {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.question-number {
+    margin-bottom: 15px;
+}
+
+.current-score {
+    margin-top: 15px;
+}
+
+.answer {
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0 5px 8px 0 #999999;
+    margin-bottom: 10px;
+}
+
+.answer:hover {
+    background-color: #cb8ef3
+}
+
+fieldset {
+    border: none;
+}
+
+.feedback-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    height: 130px;
+    width: 175px;
+}
+
+.feedback-score {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feedback-text,
+.end-score {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.end-gif {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content-box {
+        margin: 0 auto 0 auto;
+    }
+}
+
+#centrado {
+    text-align: center;
+}
+
+#centrado2 {
+    text-align: center;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #9f5cf3 0%, #00f7ff 51%, #9f5cf3 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: 2px solid black;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.botones-centrados{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select{
+	max-width: 250px;
+	position: relative;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: #B1E8CD;
+}
+ 
+/* 
+Creamos la fecha que aparece a la izquierda del select.
+Realmente este elemento es un cuadrado que sólo tienen
+dos bordes con color y que giramos con transform: rotate(-45deg);
+*/
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); /* Giramos el cuadrado */
+	transition: all 0.25s ease;
+}
+ 
+.content-select:hover i{
+	margin-top: 3px;
+}

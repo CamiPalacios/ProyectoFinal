@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Unidades de medida</title>
+    <link rel="shortcut icon" href="imagenes/iconomate.png">
+    <link href="estilomate1.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body style="background:#e5e7eb;">
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg py-2">
+        <a href="index.html" class="navbar-brand text-uppercase font-weight-bold"><img src="imagenes/EG.png" class="logo"></a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase font-weight-bold"><i class="bi bi-house-door"></i> Home <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a href="tutorial.html" class="nav-link text-uppercase font-weight-bold"><i class="bi bi-list-task"></i> Tutorial</a></li>
+                <li class="nav-item"><a href="contactos.html" class="nav-link text-uppercase font-weight-bold"><i class="bi bi-person"></i> Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="imagenes/barrilete.png" class="img_problema">
+                    <h2 class="enunciado">1) Tomas, Micaela y Guadalupe tienen una cometa cada uno, Tomas tiene 90m de hilo para elevar su cometa, Micaela 66.000mm y Guadalupe 0,056Km.</h2><br/><br/>
+                    <h3 class="enunciado">¿Cuantos metros tienen entre los 3?</h3>
+                    <div class="content-select">
+                        <select name="respuestas" id="b">
+                            <option value=""></option>
+                            <option  value="A">300m</option>
+                            <option value="B">212m</option>
+                            <option value="C">210m</option>
+                        </select>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <img src="imagenes/saltar_cuerda.png" class="img_problema">
+                    <h2 class="enunciado">2) Juliana y Camila Fueron a comprar una cuerda de saltar. Cada una fue a una tienda distinta. Juliana compro una cuerda de 223cm y Camila una de 25dm.</h2><br/><br/>
+                    <h3 class="enunciado">¿De quien es la cuerda mas larga?</h3>
+                    <div class="content-select">
+                        <select name="respuestas" id="b">
+                            <option value=""></option>
+                            <option  value="A">Juliana</option>
+                            <option value="B">Camila</option>
+                            <option value="C">Ninguna</option>
+                        </select>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <img src="imagenes/cuerda.png" class="img_problema">
+                    <h2 class="enunciado">3) ¿Cuantos centimetros quedan de una cuerda que mide 68dm si le corto 23cm?</h2>
+                    <div class="content-select">
+                        <select name="respuestas" id="a">
+                            <option value=""></option>
+                            <option  value="A">657cm</option>
+                            <option value="B">6,57cm</option>
+                            <option value="C">500cm</option>
+                        </select>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <img src="imagenes/ciudad.png" class="img_problema">
+                    <h2 class="enunciado">4) El edificio A mide 3.250mm y el edificio B mide 232dm.</h2><br/><br/>
+                    <h3 class="enunciado"> ¿Que edificio es mas alto?</h3>
+                    <div class="content-select">
+                        <select name="respuestas" id="c">
+                            <option value=""></option>
+                            <option  value="A">el A</option>
+                            <option value="B">Miden los mismo</option>
+                            <option value="C">el B</option>
+                        </select>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="botones">
+        <button onclick="ValidarRespuestas2()" class="btn-grad"> Enviar </button>
+    </div>
+    <div class="botones">
+        <a class="btn-grad" href="mate4.html">Jugar de nuevo</a>
+    </div>
+
+    <script>
+        // historia de juegos: los que va en cada juego de la materia
+        miStorage = window.localStorage;
+        var matematica = localStorage.getItem('matematica');
+        console.log('matematica datos guardados', JSON.parse(matematica))
+        matematica_object = JSON.parse(matematica);
+
+
+        if (matematica_object != null && matematica_object[2] == 0) {
+            matematica_object[2] = 1
+            localStorage.setItem('matematica', JSON.stringify(matematica_object));
+        }
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="scriptmate1.2.js"></script>
+</body>
+
+</html>

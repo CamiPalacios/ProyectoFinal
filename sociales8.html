@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poderes</title>
+    <link rel="shortcut icon" href="imagenes/iconomundo.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body style="background-color: #e5e7eb;">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg py-2">
+        <div style="display: inline-flex; padding: 2px;"><a href="index.html"
+                class="navbar-brand text-uppercase font-weight-bold"><img src="imagenes/EG.png" class="logo"></a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link text-uppercase font-weight-bold"><i
+                                class="bi bi-house-door"></i> Home <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a href="tutorial.html" class="nav-link text-uppercase font-weight-bold"><i
+                                class="bi bi-list-task"></i> Tutorial</a></li>
+                    <li class="nav-item"><a href="contactos.html" class="nav-link text-uppercase font-weight-bold"><i
+                                class="bi bi-person"></i> Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 style="text-align: center;">Busque las siguientes palabras en la sopa de letra</h1>
+        <h2 style="text-align: center;">Jueces - Senadores - Diputados - Congreso - Presidente - Judicial - Legislativo
+            - Ejecutivo</h2>
+        <table class="tabla" style="width: 700px; height: 500px;">
+            <!--Fila 1-->
+            <tr id="no">
+                <td onclick="color(this);" id="No"> E </td>
+                <td onclick="color(this);" id="No"> W </td>
+                <td onclick="color(this);" id="No"> Y </td>
+                <td onclick="color(this);" id="No"> Y </td>
+                <td onclick="color(this);" id="No"> B </td>
+                <td onclick="color(this);" id="No"> C </td>
+                <td onclick="color(this);" id="No"> T </td>
+                <td onclick="color(this);" id="No"> M </td>
+                <td onclick="color(this);" id="No"> I </td>
+                <td onclick="color(this);" id="No"> R </td>
+                <td onclick="color(this);" id="No"> P </td>
+                <td onclick="color(this);" id="No"> T </td>
+                <td onclick="color(this);" id="No"> L </td>
+                <td onclick="color(this);" id="No"> M </td>
+            </tr>
+            <!--Fila 2-->
+            <tr id="si">
+                <td onclick="color(this);" id="Si"> L </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> G </td>
+                <td onclick="color(this);" id="Si"> I </td>
+                <td onclick="color(this);" id="Si"> S </td>
+                <td onclick="color(this);" id="Si"> L </td>
+                <td onclick="color(this);" id="Si"> A </td>
+                <td onclick="color(this);" id="Si"> T </td>
+                <td onclick="color(this);" id="Si"> I </td>
+                <td onclick="color(this);" id="Si"> V </td>
+                <td onclick="color(this);" id="Si"> O </td>
+                <td onclick="color(this);" id="No"> C </td>
+                <td onclick="color(this);" id="No"> G </td>
+                <td onclick="color(this);" id="No"> Z </td>
+            </tr>
+            <!--Fila 3-->
+            <tr id="si">
+                <td onclick="color(this);" id="No"> A </td>
+                <td onclick="color(this);" id="No"> S </td>
+                <td onclick="color(this);" id="Si"> C </td>
+                <td onclick="color(this);" id="Si"> O </td>
+                <td onclick="color(this);" id="Si"> N </td>
+                <td onclick="color(this);" id="Si"> G </td>
+                <td onclick="color(this);" id="Si"> R </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> S </td>
+                <td onclick="color(this);" id="Si"> O </td>
+                <td onclick="color(this);" id="No"> H </td>
+                <td onclick="color(this);" id="No"> E </td>
+                <td onclick="color(this);" id="No"> V </td>
+                <td onclick="color(this);" id="No"> M </td>
+            </tr>
+            <!--Fila 4-->
+            <tr id="no">
+                <td onclick="color(this);"> X </td>
+                <td onclick="color(this);" id="No"> S </td>
+                <td onclick="color(this);" id="No"> H </td>
+                <td onclick="color(this);" id="No"> W </td>
+                <td onclick="color(this);" id="No"> B </td>
+                <td onclick="color(this);" id="No"> I </td>
+                <td onclick="color(this);" id="No"> Y </td>
+                <td onclick="color(this);" id="No"> C </td>
+                <td onclick="color(this);" id="No"> E </td>
+                <td onclick="color(this);" id="No"> U </td>
+                <td onclick="color(this);" id="No"> N </td>
+                <td onclick="color(this);" id="No"> R </td>
+                <td onclick="color(this);" id="No"> X </td>
+                <td onclick="color(this);" id="No"> T </td>
+            </tr>
+            <!--Fila 5-->
+            <tr id="si">
+                <td onclick="color(this);" id="Si"> J </td>
+                <td onclick="color(this);" id="Si"> U </td>
+                <td onclick="color(this);" id="Si"> D </td>
+                <td onclick="color(this);" id="Si"> I </td>
+                <td onclick="color(this);" id="Si"> C </td>
+                <td onclick="color(this);" id="Si"> I </td>
+                <td onclick="color(this);" id="Si"> A </td>
+                <td onclick="color(this);" id="Si"> L </td>
+                <td onclick="color(this);" id="No"> B </td>
+                <td onclick="color(this);" id="No"> P </td>
+                <td onclick="color(this);" id="No"> Z </td>
+                <td onclick="color(this);" id="No"> M </td>
+                <td onclick="color(this);" id="No"> P </td>
+                <td onclick="color(this);" id="No"> V </td>
+            </tr>
+            <!--Fila 6-->
+            <tr id="no">
+                <td onclick="color(this);" id="No"> A </td>
+                <td onclick="color(this);" id="No"> H </td>
+                <td onclick="color(this);" id="No"> F </td>
+                <td onclick="color(this);" id="No"> Q </td>
+                <td onclick="color(this);" id="No"> X </td>
+                <td onclick="color(this);" id="No"> Q </td>
+                <td onclick="color(this);" id="No"> Y </td>
+                <td onclick="color(this);" id="No"> X </td>
+                <td onclick="color(this);" id="No"> E </td>
+                <td onclick="color(this);" id="No"> R </td>
+                <td onclick="color(this);" id="No"> R </td>
+                <td onclick="color(this);" id="No"> Q </td>
+                <td onclick="color(this);" id="No"> B </td>
+                <td onclick="color(this);" id="No"> C </td>
+            </tr>
+            <!--Fila 7-->
+            <tr id="si">
+                <td onclick="color(this);" id="No"> E </td>
+                <td onclick="color(this);" id="No"> V </td>
+                <td onclick="color(this);" id="No"> E </td>
+                <td onclick="color(this);" id="No"> Y </td>
+                <td onclick="color(this);" id="Si"> D </td>
+                <td onclick="color(this);" id="Si"> I </td>
+                <td onclick="color(this);" id="Si"> P </td>
+                <td onclick="color(this);" id="Si"> U </td>
+                <td onclick="color(this);" id="Si"> T </td>
+                <td onclick="color(this);" id="Si"> A </td>
+                <td onclick="color(this);" id="Si"> D </td>
+                <td onclick="color(this);" id="Si"> O </td>
+                <td onclick="color(this);" id="Si"> S </td>
+                <td onclick="color(this);" id="No"> M </td>
+            </tr>
+            <!--Fila 8-->
+            <tr id="no">
+                <td onclick="color(this);" id="No"> X</td>
+                <td onclick="color(this);" id="No"> R </td>
+                <td onclick="color(this);" id="No"> R </td>
+                <td onclick="color(this);" id="No"> W </td>
+                <td onclick="color(this);" id="No"> I </td>
+                <td onclick="color(this);" id="No"> I </td>
+                <td onclick="color(this);" id="No"> B </td>
+                <td onclick="color(this);" id="No"> H </td>
+                <td onclick="color(this);" id="No"> D </td>
+                <td onclick="color(this);" id="No"> D </td>
+                <td onclick="color(this);" ide="No"> P </td>
+                <td onclick="color(this);" id="No"> R </td>
+                <td onclick="color(this);" id="No"> W </td>
+                <td onclick="color(this);" id="No"> K </td>
+            </tr>
+            <!--Fila 9-->
+            <tr id="no">
+                <td onclick="color(this);" id="No"> T </td>
+                <td onclick="color(this);" id="No"> K </td>
+                <td onclick="color(this);" id="No"> O </td>
+                <td onclick="color(this);" id="No"> F </td>
+                <td onclick="color(this);" id="No"> Q </td>
+                <td onclick="color(this);" id="No"> Y </td>
+                <td onclick="color(this);" id="No"> V </td>
+                <td onclick="color(this);" id="No"> S </td>
+                <td onclick="color(this);" id="No"> D </td>
+                <td onclick="color(this);" id="No"> D </td>
+                <td onclick="color(this);" id="No"> N </td>
+                <td onclick="color(this);" id="No"> D </td>
+                <td onclick="color(this);" id="No"> Z </td>
+                <td onclick="color(this);" id="No"> V </td>
+            </tr>
+            <!--Fila 10-->
+            <tr id="si">
+                <td onclick="color(this);" id="Si"> P </td>
+                <td onclick="color(this);" id="Si"> R </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> S </td>
+                <td onclick="color(this);" id="Si"> I </td>
+                <td onclick="color(this);" id="Si"> D </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> N </td>
+                <td onclick="color(this);" id="Si"> T </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="No"> G </td>
+                <td onclick="color(this);" ide="No"> O </td>
+                <td onclick="color(this);" id="No"> Q </td>
+                <td onclick="color(this);" id="No"> G </td>
+            </tr>
+            <!--Fila 11-->
+            <tr id="si">
+                <td onclick="color(this);" id="No"> D </td>
+                <td onclick="color(this);" id="No"> Z </td>
+                <td onclick="color(this);" id="No"> B </td>
+                <td onclick="color(this);" id="No"> C </td>
+                <td onclick="color(this);" id="Si"> S </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> N </td>
+                <td onclick="color(this);" id="Si"> A </td>
+                <td onclick="color(this);" id="Si"> D </td>
+                <td onclick="color(this);" id="Si"> O </td>
+                <td onclick="color(this);" id="Si"> R </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> S </td>
+                <td onclick="color(this);" id="No"> D </td>
+            </tr>
+            <!--Fila 12-->
+            <tr id="no">
+                <td onclick="color(this);" id="No"> P </td>
+                <td onclick="color(this);" id="No"> S </td>
+                <td onclick="color(this);" id="No"> L </td>
+                <td onclick="color(this);" id="No"> L </td>
+                <td onclick="color(this);" id="No"> O </td>
+                <td onclick="color(this);" id="No"> V </td>
+                <td onclick="color(this);" id="No"> V </td>
+                <td onclick="color(this);" id="No"> F </td>
+                <td onclick="color(this);" id="No"> B </td>
+                <td onclick="color(this);" id="No"> A </td>
+                <td onclick="color(this);" id="No"> R </td>
+                <td onclick="color(this);" id="No"> F </td>
+                <td onclick="color(this);" id="No"> D </td>
+                <td onclick="color(this);" id="No"> Y </td>
+            </tr>
+            <!--Fila 13-->
+            <tr id="si">
+                <td onclick="color(this);" id="No"> C</td>
+                <td onclick="color(this);" id="No"> A </td>
+                <td onclick="color(this);" id="No"> P </td>
+                <td onclick="color(this);" id="No"> N </td>
+                <td onclick="color(this);" id="No"> M </td>
+                <td onclick="color(this);" id="No"> P </td>
+                <td onclick="color(this);" id="No"> L </td>
+                <td onclick="color(this);" id="No"> I </td>
+                <td onclick="color(this);" id="Si"> J </td>
+                <td onclick="color(this);" id="Si"> U </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> C </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> S </td>
+            </tr>
+            <!--Fila 14-->
+            <tr id="si">
+                <td onclick="color(this);" id="No"> S </td>
+                <td onclick="color(this);" id="No"> J </td>
+                <td onclick="color(this);" id="No"> Q </td>
+                <td onclick="color(this);" id="No"> Q </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> J </td>
+                <td onclick="color(this);" id="Si"> E </td>
+                <td onclick="color(this);" id="Si"> C </td>
+                <td onclick="color(this);" id="Si"> U </td>
+                <td onclick="color(this);" id="Si"> T </td>
+                <td onclick="color(this);" id="Si"> I </td>
+                <td onclick="color(this);" id="Si"> V </td>
+                <td onclick="color(this);" id="Si"> O </td>
+                <td onclick="color(this);" id="No"> S </td>
+            </tr>
+        </table>
+    </div>
+    <div class="botones">
+        <button onclick="ValidarRespuestas()" class="btn-grad"> Enviar </button>
+    </div>
+    <div class="botones">
+        <a class="btn-grad" href="lengua1.html">Jugar de nuevo</a>
+    </div>
+
+    <script>
+        var color1 = "";
+        function color(elemento) {
+            if (color1 == "#FAE39C") {
+                elemento.style.backgroundColor = color1 = "#FAC375";
+            } else {
+                elemento.style.backgroundColor = color1 = "#FAE39C";
+            }
+        }
+        function ValidarRespuestas() {
+            var si = document.getElementById('#si');
+            var no = document.getElementById('#no');
+
+            if (si != 'Si' && si != '') {
+                swal({
+                    title: "Revisar respuestas",
+                    icon: "error",
+                });
+                return
+            }
+            
+
+            if (no != 'No') {
+                swal({
+                    title: "Revisar respuestas",
+                    icon: "error",
+                });
+                return
+            }
+
+
+            swal({
+                title: "Muy Buen Trabajo",
+                icon: "success",
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
